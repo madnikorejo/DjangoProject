@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from FYP import veiws
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('about/', veiws.aboutUs),
+    path('contact/', veiws.contact),
 ]
